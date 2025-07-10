@@ -6,8 +6,8 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from backend.recommend import recommend_from_titles
-from backend.meta import get_meta, top_by_genres
+from recommend import recommend_from_titles
+from meta import get_meta, top_by_genres
 from config.paths import P
 
 # ----------------------------------------------------------
